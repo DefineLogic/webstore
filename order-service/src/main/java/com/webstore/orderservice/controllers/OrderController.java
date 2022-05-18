@@ -11,9 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-/**
- * @author kojusujan1111@gmail.com 14/03/22
- */
+
 @RestController
 @RequestMapping("orders")
 @RefreshScope

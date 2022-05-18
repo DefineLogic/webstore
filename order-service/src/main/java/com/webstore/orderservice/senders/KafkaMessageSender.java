@@ -7,9 +7,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
-/**
- * @author kojusujan1111@gmail.com 14/03/22
- */
 @Service
 public class KafkaMessageSender {
 

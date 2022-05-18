@@ -15,10 +15,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.UUID;
 
-/**
- * @author kojusujan1111@gmail.com 14/03/22
- */
-
 @Service
 public class CartCheckoutListener {
     private static final String SHOPPING_CART_CHECKOUT_TOPIC = "shopping-cart-checkout-topic";

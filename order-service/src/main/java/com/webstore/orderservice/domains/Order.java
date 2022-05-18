@@ -3,9 +3,6 @@ package com.webstore.orderservice.domains;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-/**
- * @author kojusujan1111@gmail.com 14/03/22
- */
 @Document
 public class Order {
     @Id
