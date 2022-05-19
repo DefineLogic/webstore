@@ -37,9 +37,9 @@ public class WebShopRestClientApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        log.info("============ WELCOME TO WEB SHOP APP ===============");
-        Product product1 = new Product("75467", "Nike", 56.6, "This is test", 60);
-        Product product2 = new Product("75468", "SunnyD", 50.6, "This is test", 60);
+        log.info("============ WELCOME TO WEB STORE APP ===============");
+        Product product1 = new Product("75467", "Iphone", 1200, "This is iphone", 100);
+        Product product2 = new Product("75468", "Ipad", 1900, "This is ipad", 100);
         log.info("Creating 2 products");
         productService.create(product1);
         productService.create(product2);

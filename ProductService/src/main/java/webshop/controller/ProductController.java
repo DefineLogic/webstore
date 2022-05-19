@@ -55,5 +55,5 @@ public class ProductController {
         productService.remove(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
-    
+
 }
