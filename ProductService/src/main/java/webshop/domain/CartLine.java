@@ -13,12 +13,12 @@ public class CartLine {
     }
 
 
-    public String getProductId() {
+    public String getProductNo() {
         return productNo;
     }
 
-    public void setProductId(String productId) {
-        this.productNo = productId;
+    public void setProductNo(String productNo) {
+        this.productNo = productNo;
     }
 
     public int getQuantity() {

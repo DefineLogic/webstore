@@ -36,13 +36,14 @@ public class StockUpdateListener {
 
         ShoppingCart shoppingCart = getShoppingCartDetail(orderPlacedEvent.getShippingCartId());
         shoppingCart.getProducts().forEach(cartLine -> {
-            Product product = productService.findById(cartLine.getProductId());
+            Product product = productService.findById(cartLine.getProductNo());
             int quantity = product.getNoInStock() - cartLine.getQuantity();
             log.info("Product quantity updated with value:" + quantity);
             product.setNoInStock(quantity);
             productService.update(product);
         });
     }
+
 
     private ShoppingCart getShoppingCartDetail(String shippingCartId) {
         return this.shoppingCartCommandService.getCartDetail(shippingCartId);
